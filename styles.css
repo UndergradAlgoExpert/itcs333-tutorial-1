@@ -11,6 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin-bottom: 10px;
     background-color: rgb(76, 76, 76);
     border-radius: 10px;
 }
@@ -22,6 +23,27 @@ header {
     margin: auto 0;
     width: 275px;
     font-size: 1.3rem;
+}
+
+.book-gallary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    background-color: rgb(76, 76, 76);
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.book {
+    color: white;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
 }
 
 h1 {
@@ -37,3 +59,17 @@ a:hover {
     color: #001effa9;
 }
 
+@media screen and (max-width: 450px) {
+    header h1 {
+        font-size: 1.0rem
+    }
+
+    .navbar  {
+        width:200px;
+        font-size: 1.0rem;
+    }
+
+    .book-gallary {
+        grid-template-columns: 1fr;
+    }
+}
